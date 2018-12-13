@@ -115,7 +115,7 @@ namespace AdventOfCode.Tests
 
 			var overlaps = squares.Where(kvp => kvp.Value.Count > 1).ToList();
 
-			Assert.Equal(109_785, overlaps.Count);
+			Assert.Equal(116_920, overlaps.Count);
 		}
 
 		[Fact]
@@ -129,7 +129,7 @@ namespace AdventOfCode.Tests
 
 			var actual = GetNonOverlap(squares, claims);
 
-			Assert.Equal(504, actual);
+			Assert.Equal(382, actual);
 		}
 
 		private static IEnumerable<Claim> GetClaims()

@@ -32,7 +32,7 @@ namespace AdventOfCode.Tests
 					  select kvp.Key
 						).First();
 
-			Assert.Equal(1_439, id);
+			Assert.Equal(2_351, id);
 
 			// worst minute
 			var minute = (from kvp in dictionary
@@ -44,9 +44,9 @@ namespace AdventOfCode.Tests
 						  select gg.Key
 						).First();
 
-			Assert.Equal(42, minute);
+			Assert.Equal(36, minute);
 
-			Assert.Equal(60_438, id * minute);
+			Assert.Equal(84_636, id * minute);
 		}
 
 		[Fact]
@@ -72,10 +72,10 @@ namespace AdventOfCode.Tests
 
 			var (minute, guardId, count) = query.First();
 
-			Assert.Equal(37, minute);
-			Assert.Equal(1297, guardId);
-			Assert.Equal(19, count);
-			Assert.Equal(47989, minute * guardId);
+			Assert.Equal(49, minute);
+			Assert.Equal(1_871, guardId);
+			Assert.Equal(18, count);
+			Assert.Equal(91_679, minute * guardId);
 		}
 
 		[Fact]

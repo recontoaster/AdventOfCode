@@ -17,7 +17,7 @@ namespace AdventOfCode.Tests
 			var ids = GetBoxIds().ToList();
 			var actual = GetChecksumByIds(ids);
 
-			Assert.Equal(7533, actual);
+			Assert.Equal(5928, actual);
 		}
 
 		private static IEnumerable<string> GetBoxIds()
@@ -140,9 +140,9 @@ namespace AdventOfCode.Tests
 
 			var (left, right, common) = GetCommon(ids);
 
-			Assert.Equal("mphcuasvrnjzzakbgdtqeoylva", left);
-			Assert.Equal("mphcuasvrnjzzwkbgdtqeoylva", right);
-			Assert.Equal("mphcuasvrnjzzkbgdtqeoylva", common);
+			Assert.Equal("bqlporuexkwzyabnxmgjqctvfs", left);
+			Assert.Equal("bqlporuexkwzyabnzmgjqctvfs", right);
+			Assert.Equal("bqlporuexkwzyabnmgjqctvfs", common);
 		}
 
 		private static (string, string, string) GetCommon(IEnumerable<string> strings)

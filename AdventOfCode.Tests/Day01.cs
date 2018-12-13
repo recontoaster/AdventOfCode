@@ -24,7 +24,7 @@ namespace AdventOfCode.Tests
 				}
 			}
 
-			Assert.Equal(582, answer);
+			Assert.Equal(423, answer);
 		}
 
 		private static int ParseLine(string line) => int.Parse(line.Substring(1)) * (line[0] == '+' ? 1 : -1);
@@ -34,7 +34,7 @@ namespace AdventOfCode.Tests
 		{
 			var answer = DoWork();
 
-			Assert.Equal(488, answer);
+			Assert.Equal(61126, answer);
 		}
 
 		public static int DoWork()
