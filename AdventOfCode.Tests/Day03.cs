@@ -148,7 +148,7 @@ namespace AdventOfCode.Tests
 		}
 	}
 
-	public static class ExtensionMethods
+	public static partial class ExtensionMethods
 	{
 		public static IDictionary<Point, ICollection<Claim>> AddClaims(this IDictionary<Point, ICollection<Claim>> grid, IEnumerable<Claim> claims)
 		{
